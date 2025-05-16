@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://fibrosis_ontologia.um.es/"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/FibrosisQuistica">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/DOID_1485"/>
+    <rdfs:label xml:lang="es">Fibrosis Quística</rdfs:label>
+    <rdfs:comment xml:lang="es">Enfermedad genética caracterizada por infecciones respiratorias recurrentes y disfunción de glándulas exocrinas.</rdfs:comment>
+    <ns0:tieneHerencia>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Herencia_AutosomicaRecesiva">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0000007"/>
+        <rdfs:label xml:lang="es">Herencia autosómica recesiva</rdfs:label>
+        <rdfs:comment xml:lang="es">Patrón de herencia en el cual ambos alelos de un gen deben estar alterados para que ocurra la enfermedad.</rdfs:comment>
+      </rdf:Description>
+    </ns0:tieneHerencia>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Gly542Ter">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001587"/>
+        <rdfs:label xml:lang="es">p.Gly542Ter</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación sin sentido que causa pérdida de función de CFTR.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7115"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.02</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Arg553Ter">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001587"/>
+        <rdfs:label xml:lang="es">p.Arg553Ter</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación sin sentido que causa pérdida de función de CFTR.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7122"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0085</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001587"/>
+        <rdfs:label xml:lang="es">p.Trp1282Ter</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación sin sentido que causa pérdida de función de CFTR.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7129"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0118</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001587"/>
+        <rdfs:label xml:lang="es">p.Arg1162Ter</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación sin sentido en el gen CFTR que genera un codón de parada prematuro en la posición 1162.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7137"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0051</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Phe508del">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000159"/>
+        <rdfs:label xml:lang="es">p.Phe508del</rdfs:label>
+        <rdfs:comment xml:lang="es">Deleción de fenilalanina en la posición 508 de CFTR, afectando su plegamiento.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7105"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Lumacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Tezacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Elexacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.65</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Ile507del">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000159"/>
+        <rdfs:label xml:lang="es">p.Ile507del</rdfs:label>
+        <rdfs:comment xml:lang="es">Deleción de isoleucina en la posición 507 de CFTR, afectando su plegamiento.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7106"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Lumacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ivacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Elexacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0041</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Lys684fs">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001589"/>
+        <rdfs:label xml:lang="es">p.Lys684fs</rdfs:label>
+        <rdfs:comment xml:lang="es">Deleción de un nucleótido en el gen CFTR que provoca un cambio de marco de lectura (frameshift) en la posición 684.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/38493"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0044</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Lys1177fs">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001589"/>
+        <rdfs:label xml:lang="es">p.Lys1177fs</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación frameshift en el gen CFTR provocada por la deleción de una base en la posición 3528, causando cambio en el marco de lectura.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/35868"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0035</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Asn1303Lys</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense que altera la función de CFTR.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7136"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Lumacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Tezacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Elexacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0168</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Ser549Asn">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Ser549Asn</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense que altera la función de CFTR.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7116"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Lumacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Tezacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Elexacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0015</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Gly551Asp">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Gly551Asp</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense que altera la función de CFTR.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7120"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ivacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.00019</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/ActividadCloroChannel"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Arg117His">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Arg117His</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense que altera la función de CFTR.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7109"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ivacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0107</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/ActividadTransporteIon"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Ala455Glu">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Ala455Glu</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense que altera la función de CFTR.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7111"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ivacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Tezacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Elexacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0033</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_cantidad rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Gly85Glu">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Gly85Glu</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense en el gen CFTR que reemplaza glicina por ácido glutámico en la posición 85.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7143"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Lumacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Tezacaftor"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Elexacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0052</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Arg334Trp">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Arg334Trp</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense en el gen CFTR que reemplaza arginina por triptófano en la posición 334.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7139"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ivacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0046</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/ActividadTransporteIon"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Arg347Pro">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Arg347Pro</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense en el gen CFTR que reemplaza arginina por prolina en la posición 347.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7110"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ivacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0041</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/ActividadTransporteIon"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_Arg560Thr">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001583"/>
+        <rdfs:label xml:lang="es">p.Arg560Thr</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación missense en el gen CFTR que reemplaza arginina por treonina en la posición 560.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7113"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Exon"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ivacaftor"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0020</ns0:tieneFrecuenciaAlelica>
+        <ns0:regula_negativamente rdf:resource="http://fibrosis_recursos.um.es/ActividadCloroChannel"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_c489_1G_T">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001575"/>
+        <rdfs:label xml:lang="es">c.489+1G&gt;T</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación en el sitio donador de splicing del gen CFTR en la posición +1 del intrón posterior a c.489.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/38799"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Intron"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0080</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_c579_1G_T">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001575"/>
+        <rdfs:label xml:lang="es">c.579+1G&gt;T</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación en el sitio donador de splicing del gen CFTR en la posición +1 del intrón posterior a c.579.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/78494"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Intron"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0021</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001574"/>
+        <rdfs:label xml:lang="es">c.1585-1G&gt;A</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación en el sitio aceptor de splicing del gen CFTR en la posición -1 antes del exón siguiente a c.1585.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7112"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Intron"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.000017</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001575"/>
+        <rdfs:label xml:lang="es">c.1766+1G&gt;A</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación en el sitio donador de splicing del gen CFTR en la posición +1 del intrón posterior a c.1766.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7168"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Intron"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0028</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:causadaPor>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0001575"/>
+        <rdfs:label xml:lang="es">c.2988+1G&gt;A</rdfs:label>
+        <rdfs:comment xml:lang="es">Mutación en el sitio donador de splicing del gen CFTR en la posición +1 del intrón posterior a c.2988.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/clinvar/variation/7224"/>
+        <ns0:afectaGen rdf:resource="http://fibrosis_recursos.um.es/Gen_CFTR"/>
+        <ns0:localizadaEn rdf:resource="http://fibrosis_recursos.um.es/Intron"/>
+        <ns0:tratadaCon rdf:resource="http://fibrosis_recursos.um.es/Ataluren"/>
+        <ns0:tieneFrecuenciaAlelica rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0045</ns0:tieneFrecuenciaAlelica>
+        <ns0:reduce_expresion rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+      </rdf:Description>
+    </ns0:causadaPor>
+
+    <ns0:tieneFenotipo>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/FenotipoRespiratorio">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002795"/>
+        <rdfs:label xml:lang="es">Manifestaciones Respiratorias</rdfs:label>
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Bronquiectasia">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002110"/>
+            <rdfs:label xml:lang="es">Bronquiectasia</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/EnfermedadPulmonarCronica">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0006528"/>
+            <rdfs:label xml:lang="es">Enfermedad pulmonar crónica</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/NeumoniaRecurrente">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0006532"/>
+            <rdfs:label xml:lang="es">Neumonía recurrente</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/InfeccionesBroncopulmonaresRecurrentes">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0006538"/>
+            <rdfs:label xml:lang="es">Infecciones broncopulmonares recurrentes</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/CapacidadVitalForzadaReducida">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0032341"/>
+            <rdfs:label xml:lang="es">Capacidad vital forzada reducida</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/VolumenEspiratorioForzadoReducido">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0032342"/>
+            <rdfs:label xml:lang="es">Volumen espiratorio forzado reducido</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Hemoptisis">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002105"/>
+            <rdfs:label xml:lang="es">Hemoptisis</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+      </rdf:Description>
+    </ns0:tieneFenotipo>
+
+    <ns0:tieneFenotipo>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/FenotipoDigestivo">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0025031"/>
+        <rdfs:label xml:lang="es">Manifestaciones Digestivas</rdfs:label>
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Diarrea">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002014"/>
+            <rdfs:label xml:lang="es">Diarrea</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Esteatorrea">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002570"/>
+            <rdfs:label>Esteatorrea</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Ileo">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002595"/>
+            <rdfs:label xml:lang="es">Íleo</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/InsuficienciaPancreaticaExocrina">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0001738"/>
+            <rdfs:label>Insuficiencia pancreática exocrina</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Pancreatitis">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0001733"/>
+            <rdfs:label xml:lang="es">Pancreatitis</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/CirrosisBiliar">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002613"/>
+            <rdfs:label xml:lang="es">Cirrosis biliar</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/IleoMeconial">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0004401"/>
+            <rdfs:label xml:lang="es">Íleo meconial</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/ProlapsoRectal">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0002035"/>
+            <rdfs:label xml:lang="es">Prolapso rectal</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Hepatoesplenomegalia">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0001433"/>
+            <rdfs:label xml:lang="es">Hepatoesplenomegalia</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+      </rdf:Description>
+    </ns0:tieneFenotipo>
+
+    <ns0:tieneFenotipo>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/FenotipoSistemico">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0000118"/>
+        <rdfs:label xml:lang="es">Manifestaciones Sistémicas</rdfs:label>
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/InfertilidadMasculina">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0003251"/>
+            <rdfs:label xml:lang="es">Infertilidad masculina</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/PielSaborSalado">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_6000725"/>
+            <rdfs:label xml:lang="es">Piel con sabor salado</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/PotencialNasalHiperpolarizado">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_6000100"/>
+            <rdfs:label xml:lang="es">Potencial nasal hiperpolarizado</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/CorPulmonale">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0001648"/>
+            <rdfs:label xml:lang="es">Cor pulmonale</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+        <ns0:tieneFenotipo>
+          <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Acropaquia">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HP_0100759"/>
+            <rdfs:label xml:lang="es">Acropaquia (dedos en palillo de tambor)</rdfs:label>
+          </rdf:Description>
+        </ns0:tieneFenotipo>
+
+      </rdf:Description>
+    </ns0:tieneFenotipo>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Gen_CFTR">
+    <rdf:type rdf:resource="http://purl.uniprot.org/core/Gene"/>
+    <rdfs:label xml:lang="es">Gen CFTR</rdfs:label>
+    <rdfs:comment xml:lang="es">Gen que codifica la proteína reguladora de conductancia transmembrana de la fibrosis quística.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://www.ncbi.nlm.nih.gov/gene/1080"/>
+    <ns0:codifica rdf:resource="http://fibrosis_recursos.um.es/Proteina_CFTR"/>
+    <ns0:localizadaEn>
+      <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Cromosoma7">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/FMA_67093"/>
+        <rdfs:label xml:lang="es">Cromosoma 7</rdfs:label>
+        <rdfs:comment xml:lang="es">Cromosoma humano número 7, que contiene el gen CFTR entre otros.</rdfs:comment>
+      </rdf:Description>
+    </ns0:localizadaEn>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Proteina_CFTR">
+    <rdf:type rdf:resource="http://purl.uniprot.org/core/Protein"/>
+    <rdfs:label xml:lang="en">Cystic Fibrosis Transmembrane Conductance Regulator (CFTR)</rdfs:label>
+    <rdfs:comment xml:lang="es">Proteína de canal de cloro cuya disfunción causa fibrosis quística.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://purl.uniprot.org/uniprot/P13569"/>
+    <ns0:participaEn rdf:resource="http://fibrosis_recursos.um.es/ActividadCloroChannel"/>
+    <ns0:participaEn rdf:resource="http://fibrosis_recursos.um.es/ActividadTransporteIon"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/ActividadCloroChannel">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0005254"/>
+    <rdfs:label xml:lang="es">Actividad canal de cloruro</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/ActividadTransporteIon">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/GO_0006811"/>
+    <rdfs:label xml:lang="es">Transporte iónico</rdfs:label>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Ivacaftor">
+    <rdf:type rdf:resource="https://www.drugbank.ca/drugs/DB08820"/>
+    <rdfs:label xml:lang="es">Ivacaftor</rdfs:label>
+    <rdfs:comment xml:lang="es">Potenciador de la proteína CFTR, utilizado en el tratamiento de la fibrosis quística con determinadas mutaciones.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Lumacaftor">
+    <rdf:type rdf:resource="https://www.drugbank.ca/drugs/DB09280"/>
+    <rdfs:label xml:lang="es">Lumacaftor</rdfs:label>
+    <rdfs:comment xml:lang="es">Corrector de la proteína CFTR, especialmente para la mutación F508del.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Tezacaftor">
+    <rdf:type rdf:resource="https://www.drugbank.ca/drugs/DB11712"/>
+    <rdfs:label xml:lang="es">Tezacaftor</rdfs:label>
+    <rdfs:comment xml:lang="es">Corrector CFTR que actúa mejorando el procesamiento y tráfico celular de la proteína mutada.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Elexacaftor">
+    <rdf:type rdf:resource="https://www.drugbank.ca/drugs/DB15444"/>
+    <rdfs:label xml:lang="es">Elexacaftor</rdfs:label>
+    <rdfs:comment xml:lang="es">Corrector CFTR usado en combinación triple para tratamiento eficaz de pacientes con F508del.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Ataluren">
+    <rdf:type rdf:resource="https://www.drugbank.ca/drugs/DB05016"/>
+    <rdfs:label xml:lang="es">Ataluren</rdfs:label>
+    <rdfs:comment xml:lang="es">Fármaco experimental usado para permitir la lectura a través de codones de parada prematuros.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Exon">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000147"/>
+    <rdfs:label xml:lang="es">Exón</rdfs:label>
+    <rdfs:comment xml:lang="es">Región codificante de un gen que permanece en el ARNm maduro después del procesamiento.</rdfs:comment>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://fibrosis_recursos.um.es/Intron">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/SO_0000188"/>
+    <rdfs:label xml:lang="es">Intrón</rdfs:label>
+    <rdfs:comment xml:lang="es">Secuencia no codificante de un gen que se elimina durante el procesamiento del ARN.</rdfs:comment>
+  </rdf:Description>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/causadaPor">
+    <rdfs:label xml:lang="es">causada por</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0003302"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/localizadaEn">
+    <rdfs:label xml:lang="es">localizada en</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/afectaGen">
+    <rdfs:label xml:lang="es">afecta al gen</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GENO_0000418"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/codifica">
+    <rdfs:label xml:lang="es">codifica</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002205"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/participaEn">
+    <rdfs:label xml:lang="es">participa en</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002331"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/tratadaCon">
+    <rdfs:label xml:lang="es">tratada con</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002302"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/tieneFenotipo">
+    <rdfs:label xml:lang="es">tiene fenotipo</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002200"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/reduce_expresion">
+    <rdfs:label xml:lang="es">Reduce la expresión</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002305"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/regula_negativamente">
+    <rdfs:label xml:lang="es">Regula negativamente</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/reduce_cantidad">
+    <rdfs:label xml:lang="es">reduce la cantidad de</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/RO_0011003"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://fibrosis_ontologia.um.es/tieneHerencia">
+    <rdfs:label xml:lang="es">tiene patrón de herencia</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/GENO_0000141"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica">
+    <rdfs:label xml:lang="es">tiene frecuencia alélica</rdfs:label>
+    <owl:sameAs rdf:resource="http://purl.obolibrary.org/obo/STATO_0000254"/>
+  </owl:DatatypeProperty>
+
+</rdf:RDF>

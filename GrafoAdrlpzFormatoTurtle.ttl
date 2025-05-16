@@ -1,0 +1,635 @@
+# Primero se definen los prefijos necesarios 
+@prefix fibrosis_o: <http://fibrosis_ontologia.um.es/> .
+@prefix fibrosis_r: <http://fibrosis_recursos.um.es/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix up: <http://purl.uniprot.org/core/> .
+@prefix uniprot: <http://purl.uniprot.org/uniprot/> .
+@prefix ncbi_gene: <https://www.ncbi.nlm.nih.gov/gene/> .
+@prefix doid: <http://purl.obolibrary.org/obo/DOID_> .
+@prefix hp: <http://purl.obolibrary.org/obo/HP_> .
+@prefix so: <http://purl.obolibrary.org/obo/SO_> .
+@prefix clinvar: <https://www.ncbi.nlm.nih.gov/clinvar/variation/> .
+@prefix fma: <http://purl.obolibrary.org/obo/FMA_> .
+@prefix go: <http://purl.obolibrary.org/obo/GO_> .
+@prefix drugbank: <https://www.drugbank.ca/drugs/> .
+@prefix ro: <http://purl.obolibrary.org/obo/RO_> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# Enfermedad: Fibrosis Quística
+fibrosis_r:FibrosisQuistica rdf:type doid:1485 ;
+    rdfs:label "Fibrosis Quística"@es ;
+    rdfs:comment "Enfermedad genética caracterizada por infecciones respiratorias recurrentes y disfunción de glándulas exocrinas."@es .
+
+# Herencia: Autosómica Recesiva
+fibrosis_r:Herencia_AutosomicaRecesiva rdf:type hp:0000007 ;
+    rdfs:label "Herencia autosómica recesiva"@es ;
+    rdfs:comment "Patrón de herencia en el cual ambos alelos de un gen deben estar alterados para que ocurra la enfermedad."@es .
+
+# Gen: CFTR
+fibrosis_r:Gen_CFTR rdf:type up:Gene ;
+    rdfs:label "Gen CFTR"@es ;
+    rdfs:comment "Gen que codifica la proteína reguladora de conductancia transmembrana de la fibrosis quística."@es ;
+    rdfs:seeAlso ncbi_gene:1080 .
+
+# Proteína: CFTR
+fibrosis_r:Proteina_CFTR rdf:type up:Protein ;
+    rdfs:label "Cystic Fibrosis Transmembrane Conductance Regulator (CFTR)"@en ;
+    rdfs:comment "Proteína de canal de cloro cuya disfunción causa fibrosis quística."@es ;
+    rdfs:seeAlso uniprot:P13569 .
+
+# Definición funciones moleculares de la proteína CFTR
+fibrosis_r:ActividadCloroChannel rdf:type go:0005254;
+    rdfs:label "Actividad canal de cloruro"@es .
+
+fibrosis_r:ActividadTransporteIon rdf:type go:0006811;
+    rdfs:label "Transporte iónico"@es .
+
+# Cromosoma 7
+fibrosis_r:Cromosoma7 rdf:type fma:67093 ;
+    rdfs:label "Cromosoma 7"@es ;
+    rdfs:comment "Cromosoma humano número 7, que contiene el gen CFTR entre otros."@es .
+
+# Mutaciones concretas 
+
+# Mutaciones non-sense
+
+# Mutación p.Gly542Ter
+fibrosis_r:Mutacion_Gly542Ter rdf:type so:0001587;  # nonsense_variant
+    rdfs:label "p.Gly542Ter"@es ;
+    rdfs:comment "Mutación sin sentido que causa pérdida de función de CFTR."@es ;
+    rdfs:seeAlso clinvar:7115 .
+
+# Mutación p.Arg553Ter
+fibrosis_r:Mutacion_Arg553Ter rdf:type so:0001587 ;
+    rdfs:label "p.Arg553Ter"@es ;
+    rdfs:comment "Mutación sin sentido que causa pérdida de función de CFTR."@es ;
+    rdfs:seeAlso clinvar:7122 .
+
+# Mutación p.Trp1282Ter
+fibrosis_r:Mutacion_Trp1282Ter rdf:type so:0001587 ;
+    rdfs:label "p.Trp1282Ter"@es ;
+    rdfs:comment "Mutación sin sentido que causa pérdida de función de CFTR."@es ;
+    rdfs:seeAlso clinvar:7129 .
+
+# Mutación p.Arg1162Ter
+fibrosis_r:Mutacion_Arg1162Ter rdf:type so:0001587 ;
+    rdfs:label "p.Arg1162Ter"@es ;
+    rdfs:comment "Mutación sin sentido en el gen CFTR que genera un codón de parada prematuro en la posición 1162."@es ;
+    rdfs:seeAlso clinvar:7137 .
+
+
+# Mutaciones por deleción
+
+# Mutación p.Phe508del
+fibrosis_r:Mutacion_Phe508del rdf:type so:0000159 ;  # small deletion
+    rdfs:label "p.Phe508del"@es ;
+    rdfs:comment "Deleción de fenilalanina en la posición 508 de CFTR, afectando su plegamiento."@es ;
+    rdfs:seeAlso clinvar:7105 .
+
+# Mutación p.Ile507del
+fibrosis_r:Mutacion_Ile507del rdf:type so:0000159 ;
+    rdfs:label "p.Ile507del"@es ;
+    rdfs:comment "Deleción de isoleucina en la posición 507 de CFTR, afectando su plegamiento."@es ;
+    rdfs:seeAlso clinvar:7106 .
+
+# Frameshift
+
+# Mutación p.Lys684fs
+fibrosis_r:Mutacion_Lys684fs rdf:type so:0001589 ;
+    rdfs:label "p.Lys684fs"@es ;
+    rdfs:comment "Deleción de un nucleótido en el gen CFTR que provoca un cambio de marco de lectura (frameshift) en la posición 684."@es ;
+    rdfs:seeAlso clinvar:38493 .
+
+# Mutación p.Lys1177fs
+fibrosis_r:Mutacion_Lys1177fs rdf:type so:0001589 ;
+    rdfs:label "p.Lys1177fs"@es ;
+    rdfs:comment "Mutación frameshift en el gen CFTR provocada por la deleción de una base en la posición 3528, causando cambio en el marco de lectura."@es ;
+    rdfs:seeAlso clinvar:35868 .
+
+
+# Mutaciones missense
+
+# Mutación p.Asn1303Lys
+fibrosis_r:Mutacion_Asn1303Lys rdf:type so:0001583 ;  # missense_variant
+    rdfs:label "p.Asn1303Lys"@es ;
+    rdfs:comment "Mutación missense que altera la función de CFTR."@es ;
+    rdfs:seeAlso clinvar:7136 .
+
+# Mutación p.Ser549Asn
+fibrosis_r:Mutacion_Ser549Asn rdf:type so:0001583 ;
+    rdfs:label "p.Ser549Asn"@es ;
+    rdfs:comment "Mutación missense que altera la función de CFTR."@es ;
+    rdfs:seeAlso clinvar:7116 .
+
+# Mutación p.Gly551Asp
+fibrosis_r:Mutacion_Gly551Asp rdf:type so:0001583 ;
+    rdfs:label "p.Gly551Asp"@es ;
+    rdfs:comment "Mutación missense que altera la función de CFTR."@es ;
+    rdfs:seeAlso clinvar:7120 .
+
+# Mutación p.Arg117His
+fibrosis_r:Mutacion_Arg117His rdf:type so:0001583 ;
+    rdfs:label "p.Arg117His"@es ;
+    rdfs:comment "Mutación missense que altera la función de CFTR."@es ;
+    rdfs:seeAlso clinvar:7109 .
+
+# Mutación p.Ala455Glu
+fibrosis_r:Mutacion_Ala455Glu rdf:type so:0001583 ;
+    rdfs:label "p.Ala455Glu"@es ;
+    rdfs:comment "Mutación missense que altera la función de CFTR."@es ;
+    rdfs:seeAlso clinvar:7111 .
+
+# Mutación p.Gly85Glu
+fibrosis_r:Mutacion_Gly85Glu rdf:type so:0001583 ;
+    rdfs:label "p.Gly85Glu"@es ;
+    rdfs:comment "Mutación missense en el gen CFTR que reemplaza glicina por ácido glutámico en la posición 85."@es ;
+    rdfs:seeAlso clinvar:7143 .
+
+# Mutación p.Arg334Trp
+fibrosis_r:Mutacion_Arg334Trp rdf:type so:0001583 ;
+    rdfs:label "p.Arg334Trp"@es ;
+    rdfs:comment "Mutación missense en el gen CFTR que reemplaza arginina por triptófano en la posición 334."@es ;
+    rdfs:seeAlso clinvar:7139 .
+
+# Mutación p.Arg347Pro
+fibrosis_r:Mutacion_Arg347Pro rdf:type so:0001583 ;
+    rdfs:label "p.Arg347Pro"@es ;
+    rdfs:comment "Mutación missense en el gen CFTR que reemplaza arginina por prolina en la posición 347."@es ;
+    rdfs:seeAlso clinvar:7110 .
+
+# Mutación p.Arg560Thr
+fibrosis_r:Mutacion_Arg560Thr rdf:type so:0001583 ;
+    rdfs:label "p.Arg560Thr"@es ;
+    rdfs:comment "Mutación missense en el gen CFTR que reemplaza arginina por treonina en la posición 560."@es ;
+    rdfs:seeAlso clinvar:7113 .
+
+# Mutaciones de splicing 
+# Mutación c.489+1G>T
+fibrosis_r:Mutacion_c489_1G_T rdf:type so:0001575 ;
+    rdfs:label "c.489+1G>T"@es ;
+    rdfs:comment "Mutación en el sitio donador de splicing del gen CFTR en la posición +1 del intrón posterior a c.489."@es ;
+    rdfs:seeAlso clinvar:38799 .
+
+# Mutación c.579+1G>T
+fibrosis_r:Mutacion_c579_1G_T rdf:type so:0001575 ;
+    rdfs:label "c.579+1G>T"@es ;
+    rdfs:comment "Mutación en el sitio donador de splicing del gen CFTR en la posición +1 del intrón posterior a c.579."@es ;
+    rdfs:seeAlso clinvar:78494 .
+
+# Mutación c.1585-1G>A
+fibrosis_r:Mutacion_c1585_1G_A rdf:type so:0001574 ;
+    rdfs:label "c.1585-1G>A"@es ;
+    rdfs:comment "Mutación en el sitio aceptor de splicing del gen CFTR en la posición -1 antes del exón siguiente a c.1585."@es ;
+    rdfs:seeAlso clinvar:7112 .
+
+# Mutación c.1766+1G>A
+fibrosis_r:Mutacion_c1766_1G_A rdf:type so:0001575 ;
+    rdfs:label "c.1766+1G>A"@es ;
+    rdfs:comment "Mutación en el sitio donador de splicing del gen CFTR en la posición +1 del intrón posterior a c.1766."@es ;
+    rdfs:seeAlso clinvar:7168 .
+
+# Mutación c.2988+1G>A
+fibrosis_r:Mutacion_c2988_1G_A rdf:type so:0001575 ;
+    rdfs:label "c.2988+1G>A"@es ;
+    rdfs:comment "Mutación en el sitio donador de splicing del gen CFTR en la posición +1 del intrón posterior a c.2988."@es ;
+    rdfs:seeAlso clinvar:7224 .
+
+
+
+# Definición fenotipos generales
+
+fibrosis_r:FenotipoRespiratorio rdf:type hp:0002795;
+    rdfs:label "Manifestaciones Respiratorias"@es .
+
+fibrosis_r:FenotipoDigestivo rdf:type hp:0025031;
+    rdfs:label "Manifestaciones Digestivas"@es .
+
+fibrosis_r:FenotipoSistemico rdf:type hp:0000118;
+    rdfs:label "Manifestaciones Sistémicas"@es .
+
+
+# Definición fenotipos concretos 
+
+# Manifestaciones Respiratorias
+fibrosis_r:Bronquiectasia rdf:type hp:0002110 ;
+    rdfs:label "Bronquiectasia"@es .
+
+fibrosis_r:EnfermedadPulmonarCronica rdf:type hp:0006528 ;
+    rdfs:label "Enfermedad pulmonar crónica"@es .
+
+fibrosis_r:NeumoniaRecurrente rdf:type hp:0006532 ;
+    rdfs:label "Neumonía recurrente"@es .
+
+fibrosis_r:InfeccionesBroncopulmonaresRecurrentes rdf:type hp:0006538 ;
+    rdfs:label "Infecciones broncopulmonares recurrentes"@es .
+
+fibrosis_r:CapacidadVitalForzadaReducida rdf:type hp:0032341 ;
+    rdfs:label "Capacidad vital forzada reducida"@es .
+
+fibrosis_r:VolumenEspiratorioForzadoReducido rdf:type hp:0032342 ;
+    rdfs:label "Volumen espiratorio forzado reducido"@es .
+
+fibrosis_r:Hemoptisis rdf:type hp:0002105 ;
+    rdfs:label "Hemoptisis"@es .
+
+
+
+# Manifestaciones Digestivas
+fibrosis_r:Diarrea rdf:type hp:0002014 ;
+    rdfs:label "Diarrea"@es .
+
+fibrosis_r:Esteatorrea rdf:type hp:0002570 ;
+    rdfs:label "Esteatorrea" .
+
+fibrosis_r:Ileo rdf:type hp:0002595 ;
+    rdfs:label "Íleo"@es .
+
+fibrosis_r:InsuficienciaPancreaticaExocrina rdf:type hp:0001738 ;
+    rdfs:label "Insuficiencia pancreática exocrina" .
+
+fibrosis_r:Pancreatitis rdf:type hp:0001733 ;
+    rdfs:label "Pancreatitis"@es .
+
+fibrosis_r:CirrosisBiliar rdf:type hp:0002613 ;
+    rdfs:label "Cirrosis biliar"@es .
+
+fibrosis_r:IleoMeconial rdf:type hp:0004401 ;
+    rdfs:label "Íleo meconial"@es .
+
+fibrosis_r:ProlapsoRectal rdf:type hp:0002035 ;
+    rdfs:label "Prolapso rectal"@es .
+
+fibrosis_r:Hepatoesplenomegalia rdf:type hp:0001433 ;
+    rdfs:label "Hepatoesplenomegalia"@es .
+
+# Manifestaciones Sistémicas
+fibrosis_r:InfertilidadMasculina rdf:type hp:0003251 ;
+    rdfs:label "Infertilidad masculina"@es .
+
+fibrosis_r:PielSaborSalado rdf:type hp:6000725 ;
+    rdfs:label "Piel con sabor salado"@es.
+
+fibrosis_r:PotencialNasalHiperpolarizado rdf:type hp:6000100 ;
+    rdfs:label "Potencial nasal hiperpolarizado"@es .
+
+fibrosis_r:CorPulmonale rdf:type hp:0001648 ;
+    rdfs:label "Cor pulmonale"@es .
+
+fibrosis_r:Acropaquia rdf:type hp:0100759 ;
+    rdfs:label "Acropaquia (dedos en palillo de tambor)"@es .
+
+# Fármacos concretos
+
+fibrosis_r:Ivacaftor rdf:type drugbank:DB08820 ;
+    rdfs:label "Ivacaftor"@es ;
+    rdfs:comment "Potenciador de la proteína CFTR, utilizado en el tratamiento de la fibrosis quística con determinadas mutaciones."@es .
+
+fibrosis_r:Lumacaftor rdf:type drugbank:DB09280 ;
+    rdfs:label "Lumacaftor"@es ;
+    rdfs:comment "Corrector de la proteína CFTR, especialmente para la mutación F508del."@es .
+
+fibrosis_r:Tezacaftor rdf:type drugbank:DB11712 ;
+    rdfs:label "Tezacaftor"@es ;
+    rdfs:comment "Corrector CFTR que actúa mejorando el procesamiento y tráfico celular de la proteína mutada."@es .
+
+fibrosis_r:Elexacaftor rdf:type drugbank:DB15444 ;
+    rdfs:label "Elexacaftor"@es ;
+    rdfs:comment "Corrector CFTR usado en combinación triple para tratamiento eficaz de pacientes con F508del."@es .
+fibrosis_r:Ataluren rdf:type drugbank:DB05016 ;
+    rdfs:label "Ataluren"@es ;
+    rdfs:comment "Fármaco experimental usado para permitir la lectura a través de codones de parada prematuros."@es .
+
+# Definición de exón e intrón
+
+fibrosis_r:Exon rdf:type so:0000147 ;
+    rdfs:label "Exón"@es ;
+    rdfs:comment "Región codificante de un gen que permanece en el ARNm maduro después del procesamiento."@es .
+
+fibrosis_r:Intron rdf:type so:0000188 ;
+    rdfs:label "Intrón"@es ;
+    rdfs:comment "Secuencia no codificante de un gen que se elimina durante el procesamiento del ARN."@es .
+
+
+# Propiedades
+
+# causada por
+fibrosis_o:causadaPor rdf:type owl:ObjectProperty ;
+    rdfs:label "causada por"@es ;
+    owl:sameAs ro:0003302 .
+
+
+# localizada en (mutación localizada en exón o intrón)
+fibrosis_o:localizadaEn rdf:type owl:ObjectProperty ;
+    rdfs:label "localizada en"@es ;
+    owl:sameAs ro:0001025 .
+
+# afecta al gen (mutación afecta a un gen)
+fibrosis_o:afectaGen rdf:type owl:ObjectProperty ;
+    rdfs:label "afecta al gen"@es ;
+    owl:sameAs obo:GENO_0000418 .
+
+# codifica (gen codifica una proteína)
+fibrosis_o:codifica rdf:type owl:ObjectProperty ;
+    rdfs:label "codifica"@es ;
+    owl:sameAs ro:0002205 .
+
+# participa en (proteína participa en proceso biológico)
+fibrosis_o:participaEn rdf:type owl:ObjectProperty ;
+    rdfs:label "participa en"@es ;
+    owl:sameAs ro:0002331 .
+
+# tratada con
+fibrosis_o:tratadaCon rdf:type owl:ObjectProperty ;
+    rdfs:label "tratada con"@es ;
+    owl:sameAs ro:0002302 .
+
+# tiene fenotipo (enfermedad relacionada con un fenotipo)
+fibrosis_o:tieneFenotipo rdf:type owl:ObjectProperty ;
+    rdfs:label "tiene fenotipo"@es ;
+    owl:sameAs ro:0002200 .
+
+fibrosis_o:reduce_expresion rdf:type owl:ObjectProperty ;
+    rdfs:label "Reduce la expresión"@es ;
+    owl:sameAs ro:0002305 .
+
+fibrosis_o:regula_negativamente rdf:type owl:ObjectProperty ;
+    rdfs:label "Regula negativamente"@es ;
+    owl:sameAs ro:0002212 .
+
+fibrosis_o:reduce_cantidad rdf:type owl:ObjectProperty ;
+    rdfs:label "reduce la cantidad de"@es ;
+    owl:sameAs ro:0011003 .
+
+fibrosis_o:tieneHerencia rdf:type owl:ObjectProperty ;
+    rdfs:label "tiene patrón de herencia"@es ;
+    owl:sameAs obo:GENO_0000141 .
+
+
+
+# frecuencia alélica 
+
+fibrosis_o:tieneFrecuenciaAlelica rdf:type owl:DatatypeProperty ;
+    rdfs:label "tiene frecuencia alélica"@es ;
+    owl:sameAs obo:STATO_0000254 .
+
+
+# TRIPLETAS
+
+fibrosis_r:FibrosisQuistica fibrosis_o:tieneHerencia fibrosis_r:Herencia_AutosomicaRecesiva .
+
+
+# Relación Fibrosis Quística causada por mutaciones
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Gly542Ter .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Arg553Ter .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Trp1282Ter .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Arg1162Ter .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Phe508del .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Ile507del .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Lys684fs .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Lys1177fs .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Asn1303Lys .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Ser549Asn .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Gly551Asp .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Arg117His .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Ala455Glu .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Gly85Glu .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Arg334Trp .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Arg347Pro .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_Arg560Thr .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_c489_1G_T .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_c579_1G_T .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_c1585_1G_A .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_c1766_1G_A .
+fibrosis_r:FibrosisQuistica fibrosis_o:causadaPor fibrosis_r:Mutacion_c2988_1G_A .
+
+# Relación cada mutación afecta al Gen CFTR
+fibrosis_r:Mutacion_Gly542Ter fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Arg553Ter fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Trp1282Ter fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Arg1162Ter fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Phe508del fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Ile507del fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Lys684fs fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Lys1177fs fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Asn1303Lys fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Ser549Asn fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Gly551Asp fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Arg117His fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Ala455Glu fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Gly85Glu fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Arg334Trp fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Arg347Pro fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_Arg560Thr fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_c489_1G_T fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_c579_1G_T fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_c1585_1G_A fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_c1766_1G_A fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+fibrosis_r:Mutacion_c2988_1G_A fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+
+# Relación del gen CFTR con su proteína
+fibrosis_r:Gen_CFTR fibrosis_o:codifica fibrosis_r:Proteina_CFTR .
+
+# Relación de la proteína CFTR con funciones biológicas
+fibrosis_r:Proteina_CFTR fibrosis_o:participaEn fibrosis_r:ActividadCloroChannel .
+fibrosis_r:Proteina_CFTR fibrosis_o:participaEn fibrosis_r:ActividadTransporteIon .
+
+# Mutaciones localizadas en exones o intrones
+
+# Mutaciones nonsense → exón
+fibrosis_r:Mutacion_Gly542Ter fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Arg553Ter fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Trp1282Ter fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Arg1162Ter fibrosis_o:localizadaEn fibrosis_r:Exon .
+
+# Mutaciones por deleción → exón
+fibrosis_r:Mutacion_Phe508del fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Ile507del fibrosis_o:localizadaEn fibrosis_r:Exon .
+
+# Mutaciones frameshift → exón
+fibrosis_r:Mutacion_Lys684fs fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Lys1177fs fibrosis_o:localizadaEn fibrosis_r:Exon .
+
+# Mutaciones missense → exón
+fibrosis_r:Mutacion_Asn1303Lys fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Ser549Asn fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Gly551Asp fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Arg117His fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Ala455Glu fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Gly85Glu fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Arg334Trp fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Arg347Pro fibrosis_o:localizadaEn fibrosis_r:Exon .
+fibrosis_r:Mutacion_Arg560Thr fibrosis_o:localizadaEn fibrosis_r:Exon .
+
+# Mutaciones de splicing → intrón
+fibrosis_r:Mutacion_c489_1G_T fibrosis_o:localizadaEn fibrosis_r:Intron .
+fibrosis_r:Mutacion_c579_1G_T fibrosis_o:localizadaEn fibrosis_r:Intron .
+fibrosis_r:Mutacion_c1585_1G_A fibrosis_o:localizadaEn fibrosis_r:Intron .
+fibrosis_r:Mutacion_c1766_1G_A fibrosis_o:localizadaEn fibrosis_r:Intron .
+fibrosis_r:Mutacion_c2988_1G_A fibrosis_o:localizadaEn fibrosis_r:Intron .
+
+
+# Tratamiento 
+fibrosis_r:Mutacion_Gly542Ter fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+fibrosis_r:Mutacion_Arg553Ter fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+fibrosis_r:Mutacion_Trp1282Ter fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+fibrosis_r:Mutacion_Arg1162Ter fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+
+fibrosis_r:Mutacion_Phe508del fibrosis_o:tratadaCon fibrosis_r:Lumacaftor .
+fibrosis_r:Mutacion_Phe508del fibrosis_o:tratadaCon fibrosis_r:Tezacaftor .
+fibrosis_r:Mutacion_Phe508del fibrosis_o:tratadaCon fibrosis_r:Elexacaftor .
+
+fibrosis_r:Mutacion_Ile507del fibrosis_o:tratadaCon fibrosis_r:Lumacaftor .
+fibrosis_r:Mutacion_Ile507del fibrosis_o:tratadaCon fibrosis_r:Ivacaftor .
+fibrosis_r:Mutacion_Ile507del fibrosis_o:tratadaCon fibrosis_r:Elexacaftor .
+
+
+fibrosis_r:Mutacion_Gly551Asp fibrosis_o:tratadaCon fibrosis_r:Ivacaftor .
+fibrosis_r:Mutacion_Arg117His fibrosis_o:tratadaCon fibrosis_r:Ivacaftor .
+
+
+fibrosis_r:Mutacion_Lys684fs fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+fibrosis_r:Mutacion_Lys1177fs fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+
+fibrosis_r:Mutacion_Asn1303Lys fibrosis_o:tratadaCon fibrosis_r:Lumacaftor .
+fibrosis_r:Mutacion_Asn1303Lys fibrosis_o:tratadaCon fibrosis_r:Tezacaftor .
+fibrosis_r:Mutacion_Asn1303Lys fibrosis_o:tratadaCon fibrosis_r:Elexacaftor .
+
+fibrosis_r:Mutacion_Ser549Asn fibrosis_o:tratadaCon fibrosis_r:Lumacaftor .
+fibrosis_r:Mutacion_Ser549Asn fibrosis_o:tratadaCon fibrosis_r:Tezacaftor .
+fibrosis_r:Mutacion_Ser549Asn fibrosis_o:tratadaCon fibrosis_r:Elexacaftor .
+
+fibrosis_r:Mutacion_Ala455Glu fibrosis_o:tratadaCon fibrosis_r:Ivacaftor .
+fibrosis_r:Mutacion_Ala455Glu fibrosis_o:tratadaCon fibrosis_r:Tezacaftor .
+fibrosis_r:Mutacion_Ala455Glu fibrosis_o:tratadaCon fibrosis_r:Elexacaftor .
+
+fibrosis_r:Mutacion_Gly85Glu fibrosis_o:tratadaCon fibrosis_r:Lumacaftor .
+fibrosis_r:Mutacion_Gly85Glu fibrosis_o:tratadaCon fibrosis_r:Tezacaftor .
+fibrosis_r:Mutacion_Gly85Glu fibrosis_o:tratadaCon fibrosis_r:Elexacaftor .
+
+fibrosis_r:Mutacion_Arg334Trp fibrosis_o:tratadaCon fibrosis_r:Ivacaftor .
+fibrosis_r:Mutacion_Arg347Pro fibrosis_o:tratadaCon fibrosis_r:Ivacaftor .
+fibrosis_r:Mutacion_Arg560Thr fibrosis_o:tratadaCon fibrosis_r:Ivacaftor .
+
+
+fibrosis_r:Mutacion_c489_1G_T fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+fibrosis_r:Mutacion_c579_1G_T fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+fibrosis_r:Mutacion_c1585_1G_A fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+fibrosis_r:Mutacion_c1766_1G_A fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+fibrosis_r:Mutacion_c2988_1G_A fibrosis_o:tratadaCon fibrosis_r:Ataluren .
+
+
+
+# Frecuencias alélicas de mutaciones nonsense
+fibrosis_r:Mutacion_Gly542Ter fibrosis_o:tieneFrecuenciaAlelica "0.02"^^xsd:float .
+fibrosis_r:Mutacion_Arg553Ter fibrosis_o:tieneFrecuenciaAlelica "0.0085"^^xsd:float .
+fibrosis_r:Mutacion_Trp1282Ter fibrosis_o:tieneFrecuenciaAlelica "0.0118"^^xsd:float .
+fibrosis_r:Mutacion_Arg1162Ter fibrosis_o:tieneFrecuenciaAlelica "0.0051"^^xsd:float .
+
+# Frecuencias alélicas de mutaciones por deleción
+fibrosis_r:Mutacion_Phe508del fibrosis_o:tieneFrecuenciaAlelica "0.65"^^xsd:float .
+fibrosis_r:Mutacion_Ile507del fibrosis_o:tieneFrecuenciaAlelica "0.0041"^^xsd:float .
+
+# Frecuencias alélicas de mutaciones frameshift
+fibrosis_r:Mutacion_Lys684fs fibrosis_o:tieneFrecuenciaAlelica "0.0044"^^xsd:float .
+fibrosis_r:Mutacion_Lys1177fs fibrosis_o:tieneFrecuenciaAlelica "0.0035"^^xsd:float .
+
+# Frecuencias alélicas de mutaciones missense
+fibrosis_r:Mutacion_Asn1303Lys fibrosis_o:tieneFrecuenciaAlelica "0.0168"^^xsd:float .
+fibrosis_r:Mutacion_Ser549Asn fibrosis_o:tieneFrecuenciaAlelica "0.0015"^^xsd:float .
+fibrosis_r:Mutacion_Gly551Asp fibrosis_o:tieneFrecuenciaAlelica "0.00019"^^xsd:float .
+fibrosis_r:Mutacion_Arg117His fibrosis_o:tieneFrecuenciaAlelica "0.0107"^^xsd:float .
+fibrosis_r:Mutacion_Ala455Glu fibrosis_o:tieneFrecuenciaAlelica "0.0033"^^xsd:float .
+fibrosis_r:Mutacion_Gly85Glu fibrosis_o:tieneFrecuenciaAlelica "0.0052"^^xsd:float .
+fibrosis_r:Mutacion_Arg334Trp fibrosis_o:tieneFrecuenciaAlelica "0.0046"^^xsd:float .
+fibrosis_r:Mutacion_Arg347Pro fibrosis_o:tieneFrecuenciaAlelica "0.0041"^^xsd:float .
+fibrosis_r:Mutacion_Arg560Thr fibrosis_o:tieneFrecuenciaAlelica "0.0020"^^xsd:float .
+
+# Frecuencias alélicas de mutaciones de splicing
+fibrosis_r:Mutacion_c489_1G_T fibrosis_o:tieneFrecuenciaAlelica "0.0080"^^xsd:float .
+fibrosis_r:Mutacion_c579_1G_T fibrosis_o:tieneFrecuenciaAlelica "0.0021"^^xsd:float .
+fibrosis_r:Mutacion_c1585_1G_A fibrosis_o:tieneFrecuenciaAlelica "0.000017"^^xsd:float .
+fibrosis_r:Mutacion_c1766_1G_A fibrosis_o:tieneFrecuenciaAlelica "0.0028"^^xsd:float .
+fibrosis_r:Mutacion_c2988_1G_A fibrosis_o:tieneFrecuenciaAlelica "0.0045"^^xsd:float .
+
+
+
+# Fibrosis Quística tiene fenotipos generales
+fibrosis_r:FibrosisQuistica fibrosis_o:tieneFenotipo fibrosis_r:FenotipoRespiratorio .
+fibrosis_r:FibrosisQuistica fibrosis_o:tieneFenotipo fibrosis_r:FenotipoDigestivo .
+fibrosis_r:FibrosisQuistica fibrosis_o:tieneFenotipo fibrosis_r:FenotipoSistemico .
+
+# Fenotipo Respiratorio tiene fenotipos concretos
+fibrosis_r:FenotipoRespiratorio fibrosis_o:tieneFenotipo fibrosis_r:Bronquiectasia .
+fibrosis_r:FenotipoRespiratorio fibrosis_o:tieneFenotipo fibrosis_r:EnfermedadPulmonarCronica .
+fibrosis_r:FenotipoRespiratorio fibrosis_o:tieneFenotipo fibrosis_r:NeumoniaRecurrente .
+fibrosis_r:FenotipoRespiratorio fibrosis_o:tieneFenotipo fibrosis_r:InfeccionesBroncopulmonaresRecurrentes .
+fibrosis_r:FenotipoRespiratorio fibrosis_o:tieneFenotipo fibrosis_r:CapacidadVitalForzadaReducida .
+fibrosis_r:FenotipoRespiratorio fibrosis_o:tieneFenotipo fibrosis_r:VolumenEspiratorioForzadoReducido .
+fibrosis_r:FenotipoRespiratorio fibrosis_o:tieneFenotipo fibrosis_r:Hemoptisis .
+
+# Fenotipo Digestivo tiene fenotipos concretos
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:Diarrea .
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:Esteatorrea .
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:Ileo .
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:InsuficienciaPancreaticaExocrina .
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:Pancreatitis .
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:CirrosisBiliar .
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:IleoMeconial .
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:ProlapsoRectal .
+fibrosis_r:FenotipoDigestivo fibrosis_o:tieneFenotipo fibrosis_r:Hepatoesplenomegalia .
+
+# Fenotipo Sistémico tiene fenotipos concretos
+fibrosis_r:FenotipoSistemico fibrosis_o:tieneFenotipo fibrosis_r:InfertilidadMasculina .
+fibrosis_r:FenotipoSistemico fibrosis_o:tieneFenotipo fibrosis_r:PielSaborSalado .
+fibrosis_r:FenotipoSistemico fibrosis_o:tieneFenotipo fibrosis_r:PotencialNasalHiperpolarizado .
+fibrosis_r:FenotipoSistemico fibrosis_o:tieneFenotipo fibrosis_r:CorPulmonale .
+fibrosis_r:FenotipoSistemico fibrosis_o:tieneFenotipo fibrosis_r:Acropaquia .
+
+
+# Reducen la expresión de la proteína CFTR o clase I
+fibrosis_r:Mutacion_Gly542Ter fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Arg553Ter fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Trp1282Ter fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Arg1162Ter fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Lys684fs fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Lys1177fs fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_c489_1G_T fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_c579_1G_T fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_c1585_1G_A fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_c1766_1G_A fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_c2988_1G_A fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+
+
+
+# Regulan negativamente la expresión de CFTR o clase II
+
+fibrosis_r:Mutacion_Phe508del fibrosis_o:regula_negativamente fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Ile507del fibrosis_o:regula_negativamente fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Asn1303Lys fibrosis_o:regula_negativamente fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Ser549Asn fibrosis_o:regula_negativamente fibrosis_r:Proteina_CFTR .
+fibrosis_r:Mutacion_Gly85Glu fibrosis_o:regula_negativamente fibrosis_r:Proteina_CFTR .
+
+
+
+
+# La mutación regula negativamente la función del canal de cloro o clase III
+fibrosis_r:Mutacion_Gly551Asp fibrosis_o:regula_negativamente fibrosis_r:ActividadCloroChannel .
+fibrosis_r:Mutacion_Arg560Thr fibrosis_o:regula_negativamente fibrosis_r:ActividadCloroChannel .
+
+# La mutación regula negativamente el transporte ion o clase IV
+fibrosis_r:Mutacion_Arg117His fibrosis_o:regula_negativamente fibrosis_r:ActividadTransporteIon .
+fibrosis_r:Mutacion_Arg334Trp fibrosis_o:regula_negativamente fibrosis_r:ActividadTransporteIon .
+fibrosis_r:Mutacion_Arg347Pro fibrosis_o:regula_negativamente fibrosis_r:ActividadTransporteIon .
+
+# La mutación reduce la cantidad funcional de la proteína o clase V
+fibrosis_r:Mutacion_Ala455Glu fibrosis_o:reduce_cantidad fibrosis_r:Proteina_CFTR .
+
+
+
+# Gen CFTR localizado en cromosoma 7
+fibrosis_r:Gen_CFTR fibrosis_o:localizadaEn fibrosis_r:Cromosoma7 .
+
