@@ -1,0 +1,387 @@
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/DOID_1485> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://www.w3.org/2000/01/rdf-schema#label> "Fibrosis Qu\u00EDstica"@es .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://www.w3.org/2000/01/rdf-schema#comment> "Enfermedad gen\u00E9tica caracterizada por infecciones respiratorias recurrentes y disfunci\u00F3n de gl\u00E1ndulas exocrinas."@es .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/tieneHerencia> <http://fibrosis_recursos.um.es/Herencia_AutosomicaRecesiva> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Phe508del> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Ile507del> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Lys684fs> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Arg117His> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/causadaPor> <http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/FenotipoRespiratorio> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/FenotipoDigestivo> .
+<http://fibrosis_recursos.um.es/FibrosisQuistica> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/FenotipoSistemico> .
+<http://fibrosis_recursos.um.es/Herencia_AutosomicaRecesiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0000007> .
+<http://fibrosis_recursos.um.es/Herencia_AutosomicaRecesiva> <http://www.w3.org/2000/01/rdf-schema#label> "Herencia autos\u00F3mica recesiva"@es .
+<http://fibrosis_recursos.um.es/Herencia_AutosomicaRecesiva> <http://www.w3.org/2000/01/rdf-schema#comment> "Patr\u00F3n de herencia en el cual ambos alelos de un gen deben estar alterados para que ocurra la enfermedad."@es .
+<http://fibrosis_recursos.um.es/Gen_CFTR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.uniprot.org/core/Gene> .
+<http://fibrosis_recursos.um.es/Gen_CFTR> <http://www.w3.org/2000/01/rdf-schema#label> "Gen CFTR"@es .
+<http://fibrosis_recursos.um.es/Gen_CFTR> <http://www.w3.org/2000/01/rdf-schema#comment> "Gen que codifica la prote\u00EDna reguladora de conductancia transmembrana de la fibrosis qu\u00EDstica."@es .
+<http://fibrosis_recursos.um.es/Gen_CFTR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/gene/1080> .
+<http://fibrosis_recursos.um.es/Gen_CFTR> <http://fibrosis_ontologia.um.es/codifica> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Gen_CFTR> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Cromosoma7> .
+<http://fibrosis_recursos.um.es/Proteina_CFTR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.uniprot.org/core/Protein> .
+<http://fibrosis_recursos.um.es/Proteina_CFTR> <http://www.w3.org/2000/01/rdf-schema#label> "Cystic Fibrosis Transmembrane Conductance Regulator (CFTR)"@en .
+<http://fibrosis_recursos.um.es/Proteina_CFTR> <http://www.w3.org/2000/01/rdf-schema#comment> "Prote\u00EDna de canal de cloro cuya disfunci\u00F3n causa fibrosis qu\u00EDstica."@es .
+<http://fibrosis_recursos.um.es/Proteina_CFTR> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.uniprot.org/uniprot/P13569> .
+<http://fibrosis_recursos.um.es/Proteina_CFTR> <http://fibrosis_ontologia.um.es/participaEn> <http://fibrosis_recursos.um.es/ActividadCloroChannel> .
+<http://fibrosis_recursos.um.es/Proteina_CFTR> <http://fibrosis_ontologia.um.es/participaEn> <http://fibrosis_recursos.um.es/ActividadTransporteIon> .
+<http://fibrosis_recursos.um.es/ActividadCloroChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/GO_0005254> .
+<http://fibrosis_recursos.um.es/ActividadCloroChannel> <http://www.w3.org/2000/01/rdf-schema#label> "Actividad canal de cloruro"@es .
+<http://fibrosis_recursos.um.es/ActividadTransporteIon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/GO_0006811> .
+<http://fibrosis_recursos.um.es/ActividadTransporteIon> <http://www.w3.org/2000/01/rdf-schema#label> "Transporte i\u00F3nico"@es .
+<http://fibrosis_recursos.um.es/Cromosoma7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/FMA_67093> .
+<http://fibrosis_recursos.um.es/Cromosoma7> <http://www.w3.org/2000/01/rdf-schema#label> "Cromosoma 7"@es .
+<http://fibrosis_recursos.um.es/Cromosoma7> <http://www.w3.org/2000/01/rdf-schema#comment> "Cromosoma humano n\u00FAmero 7, que contiene el gen CFTR entre otros."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001587> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://www.w3.org/2000/01/rdf-schema#label> "p.Gly542Ter"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n sin sentido que causa p\u00E9rdida de funci\u00F3n de CFTR."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7115> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.02"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly542Ter> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001587> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://www.w3.org/2000/01/rdf-schema#label> "p.Arg553Ter"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n sin sentido que causa p\u00E9rdida de funci\u00F3n de CFTR."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7122> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0085"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg553Ter> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001587> .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://www.w3.org/2000/01/rdf-schema#label> "p.Trp1282Ter"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n sin sentido que causa p\u00E9rdida de funci\u00F3n de CFTR."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7129> .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0118"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Trp1282Ter> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001587> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://www.w3.org/2000/01/rdf-schema#label> "p.Arg1162Ter"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n sin sentido en el gen CFTR que genera un cod\u00F3n de parada prematuro en la posici\u00F3n 1162."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7137> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0051"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg1162Ter> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0000159> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://www.w3.org/2000/01/rdf-schema#label> "p.Phe508del"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://www.w3.org/2000/01/rdf-schema#comment> "Deleci\u00F3n de fenilalanina en la posici\u00F3n 508 de CFTR, afectando su plegamiento."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7105> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Lumacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Tezacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Elexacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.65"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Phe508del> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0000159> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://www.w3.org/2000/01/rdf-schema#label> "p.Ile507del"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://www.w3.org/2000/01/rdf-schema#comment> "Deleci\u00F3n de isoleucina en la posici\u00F3n 507 de CFTR, afectando su plegamiento."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7106> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Lumacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ivacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Elexacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0041"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Ile507del> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001589> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://www.w3.org/2000/01/rdf-schema#label> "p.Lys684fs"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://www.w3.org/2000/01/rdf-schema#comment> "Deleci\u00F3n de un nucle\u00F3tido en el gen CFTR que provoca un cambio de marco de lectura (frameshift) en la posici\u00F3n 684."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/38493> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0044"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys684fs> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001589> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://www.w3.org/2000/01/rdf-schema#label> "p.Lys1177fs"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n frameshift en el gen CFTR provocada por la deleci\u00F3n de una base en la posici\u00F3n 3528, causando cambio en el marco de lectura."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/35868> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0035"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Lys1177fs> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://www.w3.org/2000/01/rdf-schema#label> "p.Asn1303Lys"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense que altera la funci\u00F3n de CFTR."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7136> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Lumacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Tezacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Elexacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0168"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Asn1303Lys> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://www.w3.org/2000/01/rdf-schema#label> "p.Ser549Asn"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense que altera la funci\u00F3n de CFTR."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7116> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Lumacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Tezacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Elexacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0015"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Ser549Asn> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://www.w3.org/2000/01/rdf-schema#label> "p.Gly551Asp"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense que altera la funci\u00F3n de CFTR."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7120> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ivacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.00019"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly551Asp> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/ActividadCloroChannel> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://www.w3.org/2000/01/rdf-schema#label> "p.Arg117His"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense que altera la funci\u00F3n de CFTR."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7109> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ivacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0107"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg117His> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/ActividadTransporteIon> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://www.w3.org/2000/01/rdf-schema#label> "p.Ala455Glu"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense que altera la funci\u00F3n de CFTR."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7111> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ivacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Tezacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Elexacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0033"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Ala455Glu> <http://fibrosis_ontologia.um.es/reduce_cantidad> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://www.w3.org/2000/01/rdf-schema#label> "p.Gly85Glu"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense en el gen CFTR que reemplaza glicina por \u00E1cido glut\u00E1mico en la posici\u00F3n 85."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7143> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Lumacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Tezacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Elexacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0052"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Gly85Glu> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://www.w3.org/2000/01/rdf-schema#label> "p.Arg334Trp"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense en el gen CFTR que reemplaza arginina por tript\u00F3fano en la posici\u00F3n 334."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7139> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ivacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0046"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg334Trp> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/ActividadTransporteIon> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://www.w3.org/2000/01/rdf-schema#label> "p.Arg347Pro"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense en el gen CFTR que reemplaza arginina por prolina en la posici\u00F3n 347."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7110> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ivacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0041"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg347Pro> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/ActividadTransporteIon> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001583> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://www.w3.org/2000/01/rdf-schema#label> "p.Arg560Thr"@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n missense en el gen CFTR que reemplaza arginina por treonina en la posici\u00F3n 560."@es .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7113> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Exon> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ivacaftor> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0020"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_Arg560Thr> <http://fibrosis_ontologia.um.es/regula_negativamente> <http://fibrosis_recursos.um.es/ActividadCloroChannel> .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001575> .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://www.w3.org/2000/01/rdf-schema#label> "c.489+1G>T"@es .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n en el sitio donador de splicing del gen CFTR en la posici\u00F3n +1 del intr\u00F3n posterior a c.489."@es .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/38799> .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Intron> .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0080"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_c489_1G_T> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001575> .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://www.w3.org/2000/01/rdf-schema#label> "c.579+1G>T"@es .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n en el sitio donador de splicing del gen CFTR en la posici\u00F3n +1 del intr\u00F3n posterior a c.579."@es .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/78494> .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Intron> .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0021"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_c579_1G_T> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001574> .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://www.w3.org/2000/01/rdf-schema#label> "c.1585-1G>A"@es .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n en el sitio aceptor de splicing del gen CFTR en la posici\u00F3n -1 antes del ex\u00F3n siguiente a c.1585."@es .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7112> .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Intron> .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.000017"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_c1585_1G_A> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001575> .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://www.w3.org/2000/01/rdf-schema#label> "c.1766+1G>A"@es .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n en el sitio donador de splicing del gen CFTR en la posici\u00F3n +1 del intr\u00F3n posterior a c.1766."@es .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7168> .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Intron> .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0028"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_c1766_1G_A> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0001575> .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://www.w3.org/2000/01/rdf-schema#label> "c.2988+1G>A"@es .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://www.w3.org/2000/01/rdf-schema#comment> "Mutaci\u00F3n en el sitio donador de splicing del gen CFTR en la posici\u00F3n +1 del intr\u00F3n posterior a c.2988."@es .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.ncbi.nlm.nih.gov/clinvar/variation/7224> .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://fibrosis_ontologia.um.es/afectaGen> <http://fibrosis_recursos.um.es/Gen_CFTR> .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://fibrosis_ontologia.um.es/localizadaEn> <http://fibrosis_recursos.um.es/Intron> .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://fibrosis_ontologia.um.es/tratadaCon> <http://fibrosis_recursos.um.es/Ataluren> .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> "0.0045"^^<http://www.w3.org/2001/XMLSchema#float> .
+<http://fibrosis_recursos.um.es/Mutacion_c2988_1G_A> <http://fibrosis_ontologia.um.es/reduce_expresion> <http://fibrosis_recursos.um.es/Proteina_CFTR> .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0002795> .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://www.w3.org/2000/01/rdf-schema#label> "Manifestaciones Respiratorias"@es .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/Bronquiectasia> .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/EnfermedadPulmonarCronica> .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/NeumoniaRecurrente> .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/InfeccionesBroncopulmonaresRecurrentes> .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/CapacidadVitalForzadaReducida> .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/VolumenEspiratorioForzadoReducido> .
+<http://fibrosis_recursos.um.es/FenotipoRespiratorio> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/Hemoptisis> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0025031> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://www.w3.org/2000/01/rdf-schema#label> "Manifestaciones Digestivas"@es .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/Diarrea> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/Esteatorrea> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/Ileo> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/InsuficienciaPancreaticaExocrina> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/Pancreatitis> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/CirrosisBiliar> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/IleoMeconial> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/ProlapsoRectal> .
+<http://fibrosis_recursos.um.es/FenotipoDigestivo> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/Hepatoesplenomegalia> .
+<http://fibrosis_recursos.um.es/FenotipoSistemico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0000118> .
+<http://fibrosis_recursos.um.es/FenotipoSistemico> <http://www.w3.org/2000/01/rdf-schema#label> "Manifestaciones Sist\u00E9micas"@es .
+<http://fibrosis_recursos.um.es/FenotipoSistemico> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/InfertilidadMasculina> .
+<http://fibrosis_recursos.um.es/FenotipoSistemico> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/PielSaborSalado> .
+<http://fibrosis_recursos.um.es/FenotipoSistemico> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/PotencialNasalHiperpolarizado> .
+<http://fibrosis_recursos.um.es/FenotipoSistemico> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/CorPulmonale> .
+<http://fibrosis_recursos.um.es/FenotipoSistemico> <http://fibrosis_ontologia.um.es/tieneFenotipo> <http://fibrosis_recursos.um.es/Acropaquia> .
+<http://fibrosis_recursos.um.es/Bronquiectasia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0002110> .
+<http://fibrosis_recursos.um.es/Bronquiectasia> <http://www.w3.org/2000/01/rdf-schema#label> "Bronquiectasia"@es .
+<http://fibrosis_recursos.um.es/EnfermedadPulmonarCronica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0006528> .
+<http://fibrosis_recursos.um.es/EnfermedadPulmonarCronica> <http://www.w3.org/2000/01/rdf-schema#label> "Enfermedad pulmonar cr\u00F3nica"@es .
+<http://fibrosis_recursos.um.es/NeumoniaRecurrente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0006532> .
+<http://fibrosis_recursos.um.es/NeumoniaRecurrente> <http://www.w3.org/2000/01/rdf-schema#label> "Neumon\u00EDa recurrente"@es .
+<http://fibrosis_recursos.um.es/InfeccionesBroncopulmonaresRecurrentes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0006538> .
+<http://fibrosis_recursos.um.es/InfeccionesBroncopulmonaresRecurrentes> <http://www.w3.org/2000/01/rdf-schema#label> "Infecciones broncopulmonares recurrentes"@es .
+<http://fibrosis_recursos.um.es/CapacidadVitalForzadaReducida> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0032341> .
+<http://fibrosis_recursos.um.es/CapacidadVitalForzadaReducida> <http://www.w3.org/2000/01/rdf-schema#label> "Capacidad vital forzada reducida"@es .
+<http://fibrosis_recursos.um.es/VolumenEspiratorioForzadoReducido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0032342> .
+<http://fibrosis_recursos.um.es/VolumenEspiratorioForzadoReducido> <http://www.w3.org/2000/01/rdf-schema#label> "Volumen espiratorio forzado reducido"@es .
+<http://fibrosis_recursos.um.es/Hemoptisis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0002105> .
+<http://fibrosis_recursos.um.es/Hemoptisis> <http://www.w3.org/2000/01/rdf-schema#label> "Hemoptisis"@es .
+<http://fibrosis_recursos.um.es/Diarrea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0002014> .
+<http://fibrosis_recursos.um.es/Diarrea> <http://www.w3.org/2000/01/rdf-schema#label> "Diarrea"@es .
+<http://fibrosis_recursos.um.es/Esteatorrea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0002570> .
+<http://fibrosis_recursos.um.es/Esteatorrea> <http://www.w3.org/2000/01/rdf-schema#label> "Esteatorrea" .
+<http://fibrosis_recursos.um.es/Ileo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0002595> .
+<http://fibrosis_recursos.um.es/Ileo> <http://www.w3.org/2000/01/rdf-schema#label> "\u00CDleo"@es .
+<http://fibrosis_recursos.um.es/InsuficienciaPancreaticaExocrina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0001738> .
+<http://fibrosis_recursos.um.es/InsuficienciaPancreaticaExocrina> <http://www.w3.org/2000/01/rdf-schema#label> "Insuficiencia pancre\u00E1tica exocrina" .
+<http://fibrosis_recursos.um.es/Pancreatitis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0001733> .
+<http://fibrosis_recursos.um.es/Pancreatitis> <http://www.w3.org/2000/01/rdf-schema#label> "Pancreatitis"@es .
+<http://fibrosis_recursos.um.es/CirrosisBiliar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0002613> .
+<http://fibrosis_recursos.um.es/CirrosisBiliar> <http://www.w3.org/2000/01/rdf-schema#label> "Cirrosis biliar"@es .
+<http://fibrosis_recursos.um.es/IleoMeconial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0004401> .
+<http://fibrosis_recursos.um.es/IleoMeconial> <http://www.w3.org/2000/01/rdf-schema#label> "\u00CDleo meconial"@es .
+<http://fibrosis_recursos.um.es/ProlapsoRectal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0002035> .
+<http://fibrosis_recursos.um.es/ProlapsoRectal> <http://www.w3.org/2000/01/rdf-schema#label> "Prolapso rectal"@es .
+<http://fibrosis_recursos.um.es/Hepatoesplenomegalia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0001433> .
+<http://fibrosis_recursos.um.es/Hepatoesplenomegalia> <http://www.w3.org/2000/01/rdf-schema#label> "Hepatoesplenomegalia"@es .
+<http://fibrosis_recursos.um.es/InfertilidadMasculina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0003251> .
+<http://fibrosis_recursos.um.es/InfertilidadMasculina> <http://www.w3.org/2000/01/rdf-schema#label> "Infertilidad masculina"@es .
+<http://fibrosis_recursos.um.es/PielSaborSalado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_6000725> .
+<http://fibrosis_recursos.um.es/PielSaborSalado> <http://www.w3.org/2000/01/rdf-schema#label> "Piel con sabor salado"@es .
+<http://fibrosis_recursos.um.es/PotencialNasalHiperpolarizado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_6000100> .
+<http://fibrosis_recursos.um.es/PotencialNasalHiperpolarizado> <http://www.w3.org/2000/01/rdf-schema#label> "Potencial nasal hiperpolarizado"@es .
+<http://fibrosis_recursos.um.es/CorPulmonale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0001648> .
+<http://fibrosis_recursos.um.es/CorPulmonale> <http://www.w3.org/2000/01/rdf-schema#label> "Cor pulmonale"@es .
+<http://fibrosis_recursos.um.es/Acropaquia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/HP_0100759> .
+<http://fibrosis_recursos.um.es/Acropaquia> <http://www.w3.org/2000/01/rdf-schema#label> "Acropaquia (dedos en palillo de tambor)"@es .
+<http://fibrosis_recursos.um.es/Ivacaftor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.drugbank.ca/drugs/DB08820> .
+<http://fibrosis_recursos.um.es/Ivacaftor> <http://www.w3.org/2000/01/rdf-schema#label> "Ivacaftor"@es .
+<http://fibrosis_recursos.um.es/Ivacaftor> <http://www.w3.org/2000/01/rdf-schema#comment> "Potenciador de la prote\u00EDna CFTR, utilizado en el tratamiento de la fibrosis qu\u00EDstica con determinadas mutaciones."@es .
+<http://fibrosis_recursos.um.es/Lumacaftor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.drugbank.ca/drugs/DB09280> .
+<http://fibrosis_recursos.um.es/Lumacaftor> <http://www.w3.org/2000/01/rdf-schema#label> "Lumacaftor"@es .
+<http://fibrosis_recursos.um.es/Lumacaftor> <http://www.w3.org/2000/01/rdf-schema#comment> "Corrector de la prote\u00EDna CFTR, especialmente para la mutaci\u00F3n F508del."@es .
+<http://fibrosis_recursos.um.es/Tezacaftor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.drugbank.ca/drugs/DB11712> .
+<http://fibrosis_recursos.um.es/Tezacaftor> <http://www.w3.org/2000/01/rdf-schema#label> "Tezacaftor"@es .
+<http://fibrosis_recursos.um.es/Tezacaftor> <http://www.w3.org/2000/01/rdf-schema#comment> "Corrector CFTR que act\u00FAa mejorando el procesamiento y tr\u00E1fico celular de la prote\u00EDna mutada."@es .
+<http://fibrosis_recursos.um.es/Elexacaftor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.drugbank.ca/drugs/DB15444> .
+<http://fibrosis_recursos.um.es/Elexacaftor> <http://www.w3.org/2000/01/rdf-schema#label> "Elexacaftor"@es .
+<http://fibrosis_recursos.um.es/Elexacaftor> <http://www.w3.org/2000/01/rdf-schema#comment> "Corrector CFTR usado en combinaci\u00F3n triple para tratamiento eficaz de pacientes con F508del."@es .
+<http://fibrosis_recursos.um.es/Ataluren> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.drugbank.ca/drugs/DB05016> .
+<http://fibrosis_recursos.um.es/Ataluren> <http://www.w3.org/2000/01/rdf-schema#label> "Ataluren"@es .
+<http://fibrosis_recursos.um.es/Ataluren> <http://www.w3.org/2000/01/rdf-schema#comment> "F\u00E1rmaco experimental usado para permitir la lectura a trav\u00E9s de codones de parada prematuros."@es .
+<http://fibrosis_recursos.um.es/Exon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0000147> .
+<http://fibrosis_recursos.um.es/Exon> <http://www.w3.org/2000/01/rdf-schema#label> "Ex\u00F3n"@es .
+<http://fibrosis_recursos.um.es/Exon> <http://www.w3.org/2000/01/rdf-schema#comment> "Regi\u00F3n codificante de un gen que permanece en el ARNm maduro despu\u00E9s del procesamiento."@es .
+<http://fibrosis_recursos.um.es/Intron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.obolibrary.org/obo/SO_0000188> .
+<http://fibrosis_recursos.um.es/Intron> <http://www.w3.org/2000/01/rdf-schema#label> "Intr\u00F3n"@es .
+<http://fibrosis_recursos.um.es/Intron> <http://www.w3.org/2000/01/rdf-schema#comment> "Secuencia no codificante de un gen que se elimina durante el procesamiento del ARN."@es .
+<http://fibrosis_ontologia.um.es/causadaPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/causadaPor> <http://www.w3.org/2000/01/rdf-schema#label> "causada por"@es .
+<http://fibrosis_ontologia.um.es/causadaPor> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0003302> .
+<http://fibrosis_ontologia.um.es/localizadaEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/localizadaEn> <http://www.w3.org/2000/01/rdf-schema#label> "localizada en"@es .
+<http://fibrosis_ontologia.um.es/localizadaEn> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0001025> .
+<http://fibrosis_ontologia.um.es/afectaGen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/afectaGen> <http://www.w3.org/2000/01/rdf-schema#label> "afecta al gen"@es .
+<http://fibrosis_ontologia.um.es/afectaGen> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GENO_0000418> .
+<http://fibrosis_ontologia.um.es/codifica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/codifica> <http://www.w3.org/2000/01/rdf-schema#label> "codifica"@es .
+<http://fibrosis_ontologia.um.es/codifica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0002205> .
+<http://fibrosis_ontologia.um.es/participaEn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/participaEn> <http://www.w3.org/2000/01/rdf-schema#label> "participa en"@es .
+<http://fibrosis_ontologia.um.es/participaEn> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0002331> .
+<http://fibrosis_ontologia.um.es/tratadaCon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/tratadaCon> <http://www.w3.org/2000/01/rdf-schema#label> "tratada con"@es .
+<http://fibrosis_ontologia.um.es/tratadaCon> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0002302> .
+<http://fibrosis_ontologia.um.es/tieneFenotipo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/tieneFenotipo> <http://www.w3.org/2000/01/rdf-schema#label> "tiene fenotipo"@es .
+<http://fibrosis_ontologia.um.es/tieneFenotipo> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0002200> .
+<http://fibrosis_ontologia.um.es/reduce_expresion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/reduce_expresion> <http://www.w3.org/2000/01/rdf-schema#label> "Reduce la expresi\u00F3n"@es .
+<http://fibrosis_ontologia.um.es/reduce_expresion> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0002305> .
+<http://fibrosis_ontologia.um.es/regula_negativamente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/regula_negativamente> <http://www.w3.org/2000/01/rdf-schema#label> "Regula negativamente"@es .
+<http://fibrosis_ontologia.um.es/regula_negativamente> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0002212> .
+<http://fibrosis_ontologia.um.es/reduce_cantidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/reduce_cantidad> <http://www.w3.org/2000/01/rdf-schema#label> "reduce la cantidad de"@es .
+<http://fibrosis_ontologia.um.es/reduce_cantidad> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/RO_0011003> .
+<http://fibrosis_ontologia.um.es/tieneHerencia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://fibrosis_ontologia.um.es/tieneHerencia> <http://www.w3.org/2000/01/rdf-schema#label> "tiene patr\u00F3n de herencia"@es .
+<http://fibrosis_ontologia.um.es/tieneHerencia> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/GENO_0000141> .
+<http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> <http://www.w3.org/2000/01/rdf-schema#label> "tiene frecuencia al\u00E9lica"@es .
+<http://fibrosis_ontologia.um.es/tieneFrecuenciaAlelica> <http://www.w3.org/2002/07/owl#sameAs> <http://purl.obolibrary.org/obo/STATO_0000254> .

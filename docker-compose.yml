@@ -1,0 +1,19 @@
+version: "3"
+services:
+  linked_data_server:
+    container_name: linked_data_server_alumno06
+    image: ghcr.io/zazuko/trifid
+    ports:
+      - "8175:8080"
+    environment:
+      SPARQL_ENDPOINT_URL: "http://sparql_endpoint:9999/blazegraph/namespace/FQgrafo2/sparql"
+      DATASET_BASE_URL: "http://fibrosis_recursos.um.es/"
+
+  sparql_endpoint:
+    container_name: sparql_endpoint_alumno06
+    image: blazegraph
+    ports:
+      - "3035:9999"
+
+
+         

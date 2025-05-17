@@ -1,0 +1,43 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+<https://um.es/data/FQgrafoDataset> a dcat:Dataset ;
+    rdfs:label "Grafo de conocimiento sobre Fibrosis Quística"@es ;
+    dct:description "Este conjunto de datos RDF representa conocimiento sobre la enfermedad genética Fibrosis Quística, incluyendo genes, mutaciones, fenotipos y tratamientos."@es ;
+    foaf:primaryTopic "Fibrosis Quística"@es ;
+    dct:creator <https://um.es/foaf/Adlrpz> ;
+    prov:wasDerivedFrom <https://um.es/experimentoFQ2025> ;
+    dct:license <http://creativecommons.org/licenses/MIT/> ;
+    dcat:distribution <https://um.es/data/fqgrafo_rdf> , <https://um.es/data/fqgrafo_sparql> ;
+    sd:namedGraph <https://um.es/graph/fibrosisquistica> .
+
+<https://um.es/data/fqgrafo_rdf> a dcat:Distribution ;
+    dcat:downloadURL <https://github.com/Adlrpz/Practica_exsd/blob/main/GrafoAdrlpzFormatoRDF.rdf> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF> .
+
+<https://um.es/data/fqgrafo_sparql> a dcat:Distribution ;
+    dcat:accessURL <http://dayhoff.inf.um.es:3035/blazegraph/namespace/FQgrafo2/sparql> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> .
+
+<https://um.es/graph/fibrosisquistica> a sd:NamedGraph ;
+    rdfs:label "Grafo RDF sobre la Fibrosis Quística"@es .
+
+<http://creativecommons.org/licenses/MIT/> a cc:License ;
+    cc:permits cc:Distribution, cc:Reproduction, cc:DerivativeWorks ;
+    cc:licenseClass <http://creativecommons.org/license/software> ;
+    cc:requires cc:Notice ;
+    cc:legalcode <http://opensource.org/licenses/mit-license.php> .
+
+<https://um.es/foaf/Adlrpz> a foaf:Person ;
+    foaf:name "Alicia Del Río López" ;
+    foaf:mbox <mailto:alicia.delr@um.es> ;
+    foaf:homepage <https://github.com/Adlrpz> .
+
+
