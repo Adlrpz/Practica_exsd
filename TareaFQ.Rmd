@@ -1,0 +1,243 @@
+---
+title: "Explotación semántica de datos"
+output: html_document
+date: "2025-05-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Práctica explotación semántica de datos 
+
+# Consultas al grafo FQgrafo sobre la fibrosis quística
+
+## Carga de librerías necesarias
+```{r}
+library(SPARQL)
+library(DT)
+
+```
+
+## Definición del endpoint
+```{r}
+endpoint <- "http://dayhoff.inf.um.es:3035/blazegraph/namespace/FQgrafo/sparql"
+```
+
+## Consulta 0
+
+Con esta consulta pretendemos ver si todas las tripletas se han cargado correctamente.
+
+```{r}
+query0 <- " SELECT DISTINCT ?s ?p ?o
+WHERE {
+  ?s ?p ?o
+}
+"
+query_result0 <- SPARQL(endpoint,query0)
+resultados0 <- as.data.frame(query_result0$results)
+datatable(resultados0, options = list(pageLength=10))
+```
+
+
+
+
+## Consulta 1
+¿Qué mutaciones regulan negativamente la actividad del canal de cloro CFTR (clase III) y con qué fármacos concretos están asociadas para su tratamiento?
+
+```{r}
+
+query1 <-"PREFIX fibrosis_r: <http://fibrosis_recursos.um.es/> # se definen los prefijos
+PREFIX fibrosis_o: <http://fibrosis_ontologia.um.es/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?mutacion ?mutacionLabel ?farmaco ?farmacoLabel # Variables a consultar 
+WHERE {
+  # Mutación regula negativamente la actividad del canal de cloro
+  ?mutacion fibrosis_o:regula_negativamente fibrosis_r:ActividadCloroChannel .
+
+  # Mutación está tratada con algún fármaco concreto
+  ?mutacion fibrosis_o:tratadaCon ?farmaco .
+
+  # Etiquetas para mostrar nombres
+  ?mutacion rdfs:label ?mutacionLabel .
+  ?farmaco rdfs:label ?farmacoLabel .
+}"
+query_result1 <- SPARQL(endpoint,query1)
+resultados1 <- as.data.frame(query_result1$results)
+datatable(resultados1, options = list(pageLength=10))
+```
+
+
+## Consulta 2
+
+Obtener todas las mutaciones asociadas a la fibrosis quística clasificadas según su efecto funcional sobre la proteína CFTR. Se debe indicar a qué clase funcional pertenecen (Clase I a Clase V), en función del tipo de alteración molecular que provocan: desde la ausencia de síntesis proteica hasta una reducción en la cantidad de proteína funcional.
+
+
+```{r}
+query2 <- "
+PREFIX fibrosis_o: <http://fibrosis_ontologia.um.es/>
+PREFIX fibrosis_r: <http://fibrosis_recursos.um.es/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?mutacion ?mutacionLabel ?claseFuncional
+WHERE {
+  {
+    ?mutacion fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+    BIND(\"Clase I - Reduce expresión de la proteína CFTR\" AS ?claseFuncional)
+    BIND(1 AS ?orden)
+  }
+  UNION {
+    ?mutacion fibrosis_o:regula_negativamente fibrosis_r:Proteina_CFTR .
+    BIND(\"Clase II - Plegamiento incorrecto de la proteína CFTR\" AS ?claseFuncional)
+    BIND(2 AS ?orden)
+  }
+  UNION {
+    ?mutacion fibrosis_o:regula_negativamente fibrosis_r:ActividadCloroChannel .
+    BIND(\"Clase III - Disfunción en el canal de cloro\" AS ?claseFuncional)
+    BIND(3 AS ?orden)
+  }
+  UNION {
+    ?mutacion fibrosis_o:regula_negativamente fibrosis_r:ActividadTransporteIon .
+    BIND(\"Clase IV - Disminución en la conductancia iónica\" AS ?claseFuncional)
+    BIND(4 AS ?orden)
+  }
+  UNION {
+    ?mutacion fibrosis_o:reduce_cantidad fibrosis_r:Proteina_CFTR .
+    BIND(\"Clase V - Producción reducida de proteína funcional\" AS ?claseFuncional)
+    BIND(5 AS ?orden)
+  }
+
+  OPTIONAL { ?mutacion rdfs:label ?mutacionLabel . }
+}
+ORDER BY ?orden ?mutacion
+"
+
+
+query_result2 <- SPARQL(endpoint, query2)
+resultados2 <-as.data.frame(query_result2$results)
+datatable(resultados2, options = list(pageLength=10))
+
+
+
+```
+
+# Consulta 3
+
+Obtener las mutaciones asociadas a la fibrosis quística junto con los tratamientos disponibles para cada una, indicando además el tipo de mutación (nonsense, missense, frameshift, splicing, etc.), para facilitar un enfoque de medicina personalizada.
+
+```{r}
+query3 <- "
+PREFIX fibrosis_o: <http://fibrosis_ontologia.um.es/>
+PREFIX fibrosis_r: <http://fibrosis_recursos.um.es/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?mutacion ?mutacionLabel ?tipoMutacion ?farmacoLabel
+WHERE {
+  # Mutación con su tipo y etiqueta
+  ?mutacion rdf:type ?tipoMutacion ;
+            fibrosis_o:tratadaCon ?farmaco ;
+            rdfs:label ?mutacionLabel .
+
+  # Etiqueta del fármaco
+  ?farmaco rdfs:label ?farmacoLabel .
+
+  # Filtramos solo tipos relevantes según Sequence Ontology
+  FILTER(?tipoMutacion IN (
+    <http://purl.obolibrary.org/obo/SO_0001587>,  # nonsense
+    <http://purl.obolibrary.org/obo/SO_0001583>,  # missense
+    <http://purl.obolibrary.org/obo/SO_0001589>,  # frameshift
+    <http://purl.obolibrary.org/obo/SO_0001575>,  # splicing donor
+    <http://purl.obolibrary.org/obo/SO_0001574>,  # splicing acceptor
+    <http://purl.obolibrary.org/obo/SO_0000159>   # deletion
+  ))
+}
+ORDER BY ?tipoMutacion ?mutacionLabel ?farmacoLabel
+"
+
+query_result3 <- SPARQL(endpoint, query3)
+resultados3 <- as.data.frame(query_result3$results)
+datatable(resultados3, options = list(pageLength=10))
+
+```
+
+# Consulta 4
+
+En esta consulta se obtienen los distintos subfenotipos respiratorios que aparecen relacionados con la fibrosis quística dentro del grafo RDF. Para ello, se parte de la entidad FibrosisQuística y su relación con el fenotipo general FenotipoRespiratorio mediante la propiedad tieneFenotipo. A partir de ahí, se extraen los fenotipos más específicos asociados al ámbito respiratorio, accediendo a sus etiquetas en español a través de rdfs:label. El objetivo es visualizar de forma clara las manifestaciones clínicas pulmonares registradas en el grafo, ordenadas alfabéticamente. Esta consulta resulta útil para identificar las principales complicaciones respiratorias que caracterizan esta enfermedad genética.
+
+
+```{r}
+query4 <- "
+PREFIX fibrosis_o: <http://fibrosis_ontologia.um.es/>
+PREFIX fibrosis_r: <http://fibrosis_recursos.um.es/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?subfenotipo ?nombre
+WHERE {
+  fibrosis_r:FibrosisQuistica fibrosis_o:tieneFenotipo fibrosis_r:FenotipoRespiratorio .
+  fibrosis_r:FenotipoRespiratorio fibrosis_o:tieneFenotipo ?subfenotipo .
+  ?subfenotipo rdfs:label ?nombre .
+  FILTER (lang(?nombre) = 'es')
+}
+ORDER BY ?nombre
+"
+query_result4 <- SPARQL(endpoint, query4)
+resultado4 <- as.data.frame(query_result4$results)
+datatable(resultado4, options = list(pageLength = 10, autoWidth = TRUE))
+
+```
+
+# Consulta 5
+
+Esta consulta tiene como objetivo recuperar las mutaciones asociadas a la fibrosis quística que presentan una frecuencia alélica superior al 1%, permitiendo así identificar las variantes más prevalentes en la población. Para cada mutación, se obtiene su nombre en español, su frecuencia alélica y la clase funcional a la que pertenece, según el tipo de alteración que provoca en la proteína CFTR.
+
+```{r}
+
+query5 <- "
+PREFIX fibrosis_r: <http://fibrosis_recursos.um.es/>
+PREFIX fibrosis_o: <http://fibrosis_ontologia.um.es/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?mutacion ?nombreMutacion ?frecuenciaAlelica ?claseFuncional
+WHERE {
+  ?mutacion fibrosis_o:tieneFrecuenciaAlelica ?frecuenciaAlelica ;
+            rdfs:label ?nombreMutacion ;
+            fibrosis_o:afectaGen fibrosis_r:Gen_CFTR .
+
+  # Clasificación funcional de la mutación (clases I–V)
+  {
+    ?mutacion fibrosis_o:reduce_expresion fibrosis_r:Proteina_CFTR .
+    BIND(\"Clase I\" AS ?claseFuncional)
+  } UNION {
+    ?mutacion fibrosis_o:regula_negativamente fibrosis_r:Proteina_CFTR .
+    BIND(\"Clase II\" AS ?claseFuncional)
+  } UNION {
+    ?mutacion fibrosis_o:regula_negativamente fibrosis_r:ActividadCloroChannel .
+    BIND(\"Clase III\" AS ?claseFuncional)
+  } UNION {
+    ?mutacion fibrosis_o:regula_negativamente fibrosis_r:ActividadTransporteIon .
+    BIND(\"Clase IV\" AS ?claseFuncional)
+  } UNION {
+    ?mutacion fibrosis_o:reduce_cantidad fibrosis_r:Proteina_CFTR .
+    BIND(\"Clase V\" AS ?claseFuncional)
+  }
+
+  FILTER(LANG(?nombreMutacion) = \"es\")
+  FILTER(?frecuenciaAlelica > 0.01)
+}
+ORDER BY DESC(?frecuenciaAlelica)
+"
+
+query_result5 <- SPARQL(endpoint, query5)
+resultado5 <- as.data.frame(query_result5$results)
+
+datatable(resultado5, options = list(pageLength = 10), 
+          caption = "Mutaciones con frecuencia alélica superior al 1% y su clasificación funcional.")
+
+
+
+
+```
+
